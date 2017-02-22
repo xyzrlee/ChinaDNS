@@ -703,6 +703,7 @@ static void dns_handle_remote() {
   }
   else
     ERR("recvfrom");
+  fflush(stdout);
 }
 
 static void queue_add(id_addr_t id_addr) {
